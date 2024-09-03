@@ -8,10 +8,13 @@ const AdminPanel = () => {
   const [message, setMessage] = useState("");
   console.log(orders);
   const getData = async () => {
-    const res = await fetch("http://localhost:3000/orders", {
-      headers: { "Content-Type": "application/json" },
-      method: "GET",
-    });
+    const res = await fetch(
+      "https://yummi-restaurant-api.onrender.com/orders",
+      {
+        headers: { "Content-Type": "application/json" },
+        method: "GET",
+      }
+    );
 
     const data = await res.json();
     setOrders(data);

@@ -38,7 +38,7 @@ const Cart = () => {
   };
 
   const getData = async () => {
-    const res = await fetch("http://localhost:3000/cart", {
+    const res = await fetch("https://yummi-restaurant-api.onrender.com/cart", {
       method: "GET",
       headers: { "Content-Type": "application/json" },
     });
@@ -48,7 +48,7 @@ const Cart = () => {
   };
 
   const handleDelete = async (name) => {
-    const res = await fetch("http://localhost:3000/cart", {
+    const res = await fetch("https://yummi-restaurant-api.onrender.com/cart", {
       method: "DELETE",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
@@ -77,11 +77,14 @@ const Cart = () => {
       totalPrice,
     };
 
-    const res = await fetch("http://localhost:3000/orders", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(orderData),
-    });
+    const res = await fetch(
+      "https://yummi-restaurant-api.onrender.com/orders",
+      {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(orderData),
+      }
+    );
     const data = await res.json();
     if (res.ok) {
       // Handle success (e.g., show a success message, redirect to another page, etc.)

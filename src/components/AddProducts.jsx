@@ -44,10 +44,13 @@ const AddProducts = () => {
 
     try {
       setIsTrue(false);
-      const res = await fetch("http://localhost:3000/product", {
-        method: "POST",
-        body: formData, // Send the formData directly
-      });
+      const res = await fetch(
+        "https://yummi-restaurant-api.onrender.com/product",
+        {
+          method: "POST",
+          body: formData, // Send the formData directly
+        }
+      );
 
       const data = await res.json();
       console.log(data);
@@ -60,10 +63,13 @@ const AddProducts = () => {
     window.location.reload();
   };
   const getData = async () => {
-    const res = await fetch("http://localhost:3000/product", {
-      headers: { "Content-Type": "application/json" },
-      method: "GET",
-    });
+    const res = await fetch(
+      "https://yummi-restaurant-api.onrender.com/product",
+      {
+        headers: { "Content-Type": "application/json" },
+        method: "GET",
+      }
+    );
     const data = await res.json();
     setProducts(data);
   };
