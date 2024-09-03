@@ -1707,6 +1707,53 @@ td {
   }
 }
 @media only screen and (max-width: 600px) {
+  .cmc-middle {
+    display: none;
+  }
+  .chef-menu-container {
+    flex-direction: column;
+  }
+  .cmc-left {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+  }
+  .cmcl-item {
+    width: 45%;
+    flex-direction: column;
+    height: 250px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 30px;
+  }
+  .item-1st {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .img-1st {
+    margin-left: 0;
+    opacity: 1;
+    margin: 0;
+    margin-bottom: -100px;
+  }
+  .desc-1st {
+    margin: 0;
+  }
+  .desc-1st p {
+    width: 300px;
+  }
+  .shop-item {
+    width: 48%;
+  }
+  .fl-center-btn {
+    display: none;
+  }
   .cart-banner {
     height: 200px;
   }
@@ -1799,12 +1846,16 @@ td {
   #MainNavBar {
     align-items: center;
     justify-content: space-between;
-    padding: 5px 10px;
+    padding: 0px 10px;
     margin: 0;
   }
   .mn-middle {
     text-align: left;
     width: 100%;
+  }
+  .mn-middle img {
+    width: 100px;
+    height: 100px;
   }
   .x-mark-div {
     display: block;
@@ -1826,26 +1877,34 @@ td {
   .flex1 {
     flex: 100%;
   }
-  .cmc-middle {
+  .cartDiv {
     display: none;
+    width: 40px;
+    height: 40px;
   }
-  .chef-menu-container {
-    flex-direction: column;
-    padding: 0;
-  }
-  .cmc-left {
-    width: 100%;
-  }
-  .img-1st {
-    margin-left: -90px;
-    width: 100px;
-    height: 100px;
-  }
-  #ChefMenu {
+  #Banner {
     padding: 10px;
   }
-  .shop-item {
-    width: 100%;
+  #bannerHead h1 {
+    font-size: 28px;
+  }
+  #bannerHead h5 {
+    font-size: 16px;
+  }
+  p {
+    font-size: 12px;
+  }
+  #SectionHeader h5 {
+    font-size: 16px;
+  }
+  #SectionHeader h1 {
+    font-size: 28px;
+  }
+  .desc-1st p {
+    width: 270px;
+  }
+  .foot-menu {
+    display: none;
   }
 }
 /* Responsive */
