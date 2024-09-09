@@ -10,15 +10,18 @@ const Shop = () => {
   const [changeImage, setChangeImage] = useState(null);
   const [indexText, setIndexText] = useState(null);
   const getData = async () => {
-    const res = await fetch("http://localhost:3000/product", {
-      headers: { "Content-Type": "application/json" },
-      method: "GET",
-    });
+    const res = await fetch(
+      "https://yummi-restaurant-api.onrender.com/product",
+      {
+        headers: { "Content-Type": "application/json" },
+        method: "GET",
+      }
+    );
     const data = await res.json();
     setProducts(data);
   };
   const handleCart = async (name, price, image1, image2) => {
-    const res = await fetch("http://localhost:3000/cart", {
+    const res = await fetch("https://yummi-restaurant-api.onrender.com/cart", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
