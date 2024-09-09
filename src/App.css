@@ -501,6 +501,7 @@ span a {
   height: 200px;
   position: relative;
   border-radius: 10px;
+  outline: none;
 }
 .ins-overlay {
   position: absolute;
@@ -530,13 +531,16 @@ span a {
 .caro-image img:hover {
   transition: all 2s;
   transform: scale(1.1);
+  outline: none;
 }
 .caro-image:hover {
+  outline: none;
   cursor: url("/images/cursor-hover.png"), auto;
 }
 .caro-image:hover .ins-overlay {
   transition: all 0.5s;
   transform: scale(1);
+  outline: none;
 }
 .caro-image:hover .insta-icon-div {
   transition: all 0.5s;
@@ -1708,6 +1712,9 @@ td {
   }
 }
 @media only screen and (max-width: 600px) {
+  .ftt-middle h1 {
+    font-size: 28px;
+  }
   .cmc-middle {
     display: none;
   }
