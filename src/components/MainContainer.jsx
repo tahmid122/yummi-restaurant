@@ -10,7 +10,7 @@ import Footer from "./Footer";
 
 const MainContainer = () => {
   return (
-    <section>
+    <section style={{ overflow: "hidden" }}>
       <MarqueText />
       <MainNavBar />
       <Banner />
