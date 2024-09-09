@@ -127,7 +127,7 @@ const Footer = () => {
       <div className="last-footer">
         <p>
           ©{" "}
-          <a href="http://www.tahmidalam.vercel.app" target="_blank">
+          <a href="https://tahmidalam.vercel.app/" target="_blank">
             Tahmid_Alam
           </a>{" "}
           all rights Reserved
